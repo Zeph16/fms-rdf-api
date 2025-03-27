@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  fms-fuseki:
+    image: stain/jena-fuseki
+    ports:
+      - "3030:3030"
+    command: ["/jena-fuseki/fuseki-server", "--mem", "--port=3030", "/fms"]
+
+  fms-postgres:
+    image: postgres:latest
+    restart: always
+    environment:
+      POSTGRES_USER: fms
+      POSTGRES_PASSWORD: fms
+      POSTGRES_DB: fms
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
