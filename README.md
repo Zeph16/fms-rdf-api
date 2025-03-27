@@ -5,13 +5,12 @@ A **Spring Boot REST API** for managing **accounts, transactions, budgets, goals
 ## **Features**
 
 ✅ **RESTful API** – Standard CRUD operations following best practices and Spring Boot design patterns (controller-service-repository, DTOs, custom exceptions...).  
-✅ **Spring Security with JWT** - Custom JWT functionality with a **token database** for tracking and revocation, along with a custom authentication filter for handling JWTs.
+✅ **Spring Security with JWT** - Custom JWT functionality with a **token database** for tracking and revocation, along with a custom authentication filter for handling JWTs.         
 ✅ **Swagger API Documentation** – Explore and test endpoints.  
 ✅ **PostgreSQL Database** – Reliable structured storage.  
 ✅ **RDF Triple Store (Apache Jena Fuseki)** – Financial data is also stored in **RDF format** for **semantic queries** and **linked data capabilities**.  
 ✅ **Docker Support** – PostgreSQL and Fuseki are set up via `docker-compose.yml`.
 
----
 
 ## **Getting Started**
 
@@ -51,8 +50,6 @@ A **Spring Boot REST API** for managing **accounts, transactions, budgets, goals
         
     - **SPARQL Query UI** (for RDF data): [http://localhost:3030](http://localhost:3030)
         
-
----
 
 ## **Semantic Web & RDF Integration**
 
